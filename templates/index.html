@@ -9,21 +9,36 @@
 
     <head>
 	<style>
-	body {
-	  font-size: 80%;
-	}
-
-	h1 {
-	  font-size: 2.5em;
-	}
-
-	h2 {
-	  font-size: 1.875em;
-	}
-
-	p {
-	  font-size: 0.875em;
-	}
+	    .button1 {
+		max-height:20px;
+	    }
+	    .input1 {
+		font-size:12px; 
+		max-height:20px;
+	    }
+	    .input2 {
+		max-width:50px; 
+		font-size:12px; 
+		max-height:20px;
+	    }
+	    .input3 {
+		font-size:12px;
+	    }
+	    .input4 {
+		font-size:12px; 
+		max-width:45px; 
+		max-height:20px;
+	    }
+	    .input5 {
+		font-size:12px; 
+		max-width:40px; 
+		max-height:20px;
+	    }
+	    .s {
+		font-size:8px; 
+		max-width:10px; 
+		max-height:20px;
+	    }
 	</style>
     </head>
     <title>SpesaApp</title>
@@ -37,44 +52,44 @@
 		</a>
 	    </div>
 	</nav>
-	    {% for product in spesa %}
-	<div class="m-1 input-group mb-0" style="font-size:8px;">
-	    <form action="{{product.id}}/take" method="POST" >
-		    <button class="btn btn-success" style="max-height:20px;" type="submit" id="button-addon1">
+	{% for product in spesa %}
+	    <div class="m-1 input-group mb-0" style="font-size:8px;">
+		<form action="{{product.id}}/take" method="POST" >
+		    <button class="btn btn-success button1" type="submit">
 			<img style="max-height:20px;" src="{{url_for('static', filename='Accept-icon.png')}}"/>
 		    </button>
-	    </form>
-		    <input style="font-size:12px; max-height:20px;" class="form-control" type="text" value="{{product.name}}" aria-label="Product name" disabled readonly>
-	    <form action="{{product.id}}/update" method="POST">
-		    <input type="text" style="max-width:50px; font-size:12px; max-height:20px;" name="quantity" class="form-control" value="{{product.quantity}}" aria-label="Quantity" aria-describedby="basic-addon1">
-	    </form>
-	</div>
-	    {% endfor %}
-	<div class="my-3 mx-1">
-	    <form action="new" method="POST" class="input-group mb-1" style="font-size:8px;">
-		    <button class="btn btn-warning" type="submit" id="button-addon1">
-			<img src="{{url_for('static', filename='add-icon.png')}}"/>
-		    </button>
-		    <input type="text" class="form-control" style="font-size:12px;" name="name" placeholder="Product" aria-label="Product" aria-describedby="basic-addon1" required>
-		    <input type="text" class="form-control" style="font-size:12px; max-width:50px;" name="quantity" placeholder="Quantity: 1" aria-label="Quantity: 1" aria-describedby="basic-addon1" required>
-		    <input type="text" class="form-control" style="font-size:12px; max-width:50px;" name="category" placeholder="Category: 0" aria-label="Category: 0" aria-describedby="basic-addon1" required>
-	    </form>
-	</div>
-	    {% for product in products %}
-		<form action="{{product.id}}/add" method="POST" style="font-size:8px;max-height:20px;">
-		    <div class="m-1 input-group mb-0">
-			<button style="max-height:20px;" class="btn btn-primary" type="submit" id="button-addon1">
-			    <img style="max-height:20px;" src="{{url_for('static', filename='arrow-up-icon.png')}}"/>
-			</button>
-			<span style="font-size:8px; max-width:10px;max-height:20px;" class="input-group-text">P</span>
-			<input class="form-control" type="text" style="font-size:12px;max-height:20px;" name="name" value="{{product.name}}" aria-label="Product name">
-			<span style="font-size:8px; max-width:10px;max-height:20px;" class="input-group-text">Q</span>
-			<input type="text" class="form-control" style="font-size:12px; max-width:45px;max-height:20px;" name="quantity" value="{{product.quantity}}" aria-label="Quantity" aria-describedby="basic-addon1" required>
-			<span style="font-size:8px; max-width:10px;max-height:20px;" class="input-group-text">C</span>
-			<input type="text" class="form-control" style="font-size:12px; max-width:40px;max-height:20px;" name="category" value="{{product.category}}" aria-label="Category" aria-describedby="basic-addon1" required>
-		    </div>
 		</form>
-	    {% endfor %}
+		<input class="form-control input1" type="text" value="{{product.name}}" disabled>
+		<form action="{{product.id}}/update" method="POST">
+		    <input type="text" name="quantity" class="form-control input2" value="{{product.quantity}}">
+		</form>
+	    </div>
+	{% endfor %}
+	<div class="my-3 mx-1">
+	    <form action="new" method="POST" class="input-group mb-1">
+		<button class="btn btn-warning" type="submit">
+		    <img src="{{url_for('static', filename='add-icon.png')}}"/>
+		</button>
+		<input type="text" class="form-control input3" name="name" placeholder="Product" required>
+		<input type="text" class="form-control input3" name="quantity" placeholder="Quantity: 1" required>
+		<input type="text" class="form-control input3" name="category" placeholder="Category: 0" required>
+	    </form>
+	</div>
+	{% for product in products %}
+	    <form action="{{product.id}}/add" method="POST">
+		<div class="m-1 input-group mb-0">
+		    <button class="btn btn-primary button1" type="submit" id="button-addon1">
+			<img class="button1" src="{{url_for('static', filename='arrow-up-icon.png')}}"/>
+		    </button>
+		    <span class="input-group-text s">P</span>
+		    <input class="form-control input1" type="text" name="name" value="{{product.name}}">
+		    <span class="input-group-text s">Q</span>
+		    <input type="text" class="form-control input4" name="quantity" value="{{product.quantity}}" required>
+		    <span class="input-group-text s">C</span>
+		    <input type="text" class="form-control input5" name="category" value="{{product.category}}" required>
+		</div>
+	    </form>
+	{% endfor %}
 	
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>

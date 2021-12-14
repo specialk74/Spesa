@@ -63,7 +63,6 @@ def new():
 @app.route('/<int:idx>/update', methods=('POST',))
 def update(idx):
     connection = connect()
-    print(request.form['quantity'])
     connection.execute('UPDATE spesa SET quantity=? WHERE id=?', (request.form['quantity'], idx))
     connection.commit()    
 
