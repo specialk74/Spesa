@@ -53,8 +53,16 @@ def new():
     name = request.form['name']
     quantity = request.form['quantity']
     category = request.form['category']
+        
+    cur = connection.cursor()
+    values = cur.execute('SELECT id,count FROM spesa WHERE name=?', (name,))
+    if values is not None:
+        idValue, count = values.fetchone()
+        count += 1
+        connection.execute('UPDATE spesa SET toTake=1, quantity=?, category=?, count=? WHERE id=?', (quantity, category, count, idValue))        
+    else:
+        connection.execute('INSERT INTO spesa (name, quantity, category, count, toTake) VALUES (?,?,?,0,1)', (name, quantity, category))
     
-    connection.execute('INSERT INTO spesa (name, quantity, category, count, toTake) VALUES (?,?,?,0,1)', (name, quantity, category))
     connection.commit()    
 
     connection.close()
