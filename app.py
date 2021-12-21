@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, request
+from flask import Flask, render_template, redirect, request, jsonify
 import os
 import sqlite3
 
@@ -10,7 +10,7 @@ def connect():
     connection.row_factory = sqlite3.Row
     return connection
 
-@app.route('/')
+@app.route('/spesa')
 def index():
     connection = connect()
 
@@ -20,6 +20,19 @@ def index():
     connection.close()
 
     return render_template('index.html', products=products, spesa=spesa)
+
+@app.route('/autocomplete', methods=['GET'])
+def autocomplete():
+    connection = connect()
+    cur = connection.cursor()
+    
+    search = request.args.get('q')
+    #query = db_session.query(Movie.title).filter(Movie.title.like('%' + str(search) + '%'))
+    
+    cur.execute('SELECT name FROM spesa WHERE toTake=0 and name LIKE ? ORDER BY count', ('%'+search+'%',))
+    data = dict(result=[dict(r) for r in cur.fetchall()])
+    print(data)
+    return jsonify(matching_results=data)
 
 @app.route('/<int:idx>/add', methods=('POST',))
 def add(idx):
@@ -32,7 +45,7 @@ def add(idx):
 
         connection.close()
         
-        return redirect('/')
+        return redirect('/spesa')
         
     quantity = request.form['quantity']
     category = request.form['category']
@@ -44,7 +57,7 @@ def add(idx):
     connection.commit()
 
     connection.close()
-    return redirect('/')
+    return redirect('/spesa')
     
 @app.route('/new', methods=('POST',))
 def new():
@@ -66,7 +79,7 @@ def new():
     connection.commit()    
 
     connection.close()
-    return redirect('/')
+    return redirect('/spesa')
 
 @app.route('/<int:idx>/update', methods=('POST',))
 def update(idx):
@@ -75,7 +88,7 @@ def update(idx):
     connection.commit()    
 
     connection.close()
-    return redirect('/')
+    return redirect('/spesa')
 
 @app.route('/<int:idx>/take', methods=('POST',))
 def take(idx):
@@ -85,7 +98,7 @@ def take(idx):
     connection.commit()
 
     connection.close()
-    return redirect('/')
+    return redirect('/spesa')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=port, threaded=True)
