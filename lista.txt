@@ -1,0 +1,829 @@
+[ ] Mozzarella 2 conf 
+[x] Burro chiarificato 
+[x] Ricotta vallelata 200g 
+[x] Petto di pollo da fare a pezzetti 
+[x] Hamburger vegetali 
+[x] Hamburgers surgelati 
+[x] Prosciutto cotto a cubetti 
+[x] Yogurt gusti creme 
+[x] Linea 
+[x] Nocciolini mozzarella 2 conf
+[x] Sottilette (1 conf grande) 
+[x] Bastoncini di spinaci 
+[x] Pasta pronta per crostata 
+[x] Gamberi surgelati 3 confezioni 
+[x] Lasagne di frigo (forse buitoni)
+[x] Tritata per sugo 
+[x] Sofficini 3 conf 
+[x] Bastoncini pesce 
+[x] Merluzzo x Marco 
+[x] Mascarpone 500g 
+[x] Pancetta a fette grassa
+[x] Sugo fresco pomodoro e basilico Esselunga 2
+[x] Philadelphia 
+[x] Pesto alla siciliana 1 
+[x] Pesto Biffi 1 
+[x] Sugo noci esselunga 2
+[x] Asiago 
+[x] Frutti di bosco surgelati
+[x] Salmone affumicato a fette
+[x] Mozzarella di bufala 
+[x] Yogurt greco 1 grosso o 3 piccoli
+[x] Minestrone surgelato senza fagioli 
+[x] Gorgonzola dolce
+[x] Broccoli surgelati 
+[x] Tortelli ricotta e spinaci 
+[x] Feta 1
+[x] Prezzemolo surgelato
+[x] Carne per Marco
+[x] Tortellini
+[x] Robiola Osella
+[x] Pancetta affumicata a cubetti 
+[x] Ghiaccioli
+[x] Fettine di vitello 
+[x] Spinaci surgelati 1 
+[x] Misto grigliato 2
+[x] Misto per soffritto surgelato 
+[x] Gelato al caffè in barattolo 
+[x] Gelati al caffè tipo coppa del nonno 
+[x] Wurstel grossi di maiale 
+[x] Emmenthal 
+[x] Bocconcini di vitello 2 conf
+[x] Speck se possibile a listarelle (300-400g)
+[x] Kefir milk 
+[x] Patate piccole tonde confezionate
+[x] Mirtilli rossi 
+[x] Cordon bleu 
+[x] Cavolini di Bruxelles 
+[x] Asian Rice la valle degli orti 1
+[x] Una verdura surgelata (no fagiolini) 
+[x] Latte fresco Michele intero 
+[x] Taccole surgelate
+[x] Fiori di merluzzo findus (2 scatole ) 
+[x] Bacon
+[x] Kefir
+[x] Cameo budino delle mucche 
+[x] Buste frutti di bosco e fragole
+[x] Murluzzo surgelato x Marco
+[x] Camembert
+[x] Orogel couscous vegetariano ( surgelato)
+[x] Spinacine da frigo 
+[x] Sfoglia rotonda Buitoni integrale per torta salata 
+[x] Pancetta dolce a cubetti 
+[x] Gelati piccoli 
+[x] Agnolotti 
+[x] Pizze (3) 
+[x] Sfilacci cavallo
+[x] Patatine fritte surgelate 
+[x] Vaschetta gelato fior di panna Carte d'Or 
+[x] Chicken nuggets 2 conf 
+[x] Fettine di pollo o tacchino 
+[x] Salsiccia 
+[x] Mozzarella per pizza 
+[x] Burro 125g normale 
+[x] Vaschetta gelato Carte d'Or tiramisù 
+[x] Tritata sceltissima 700 grammi (polpette)
+[x] Cipolla surgelata 
+[x] Pezzo di fassona da fare arrosto 
+[x] Burro normale 125g 
+[x] Speck a listarelle per sugo 120g
+[x] Salame a fette per panini 1hg
+[x] Contorno misto grigliato surgelato 
+[x] Fagiolini surgelati 
+[x] Fettine di vitello (per milanesi) 
+[x] Olive condite da antipasto 
+[x] Yogurt x Marco 1 
+[x] Fragole surgelate
+[x] stracchino nonno nanni
+[x] burrata
+[x] Yogurt limone, caffè (1 conf da 2 per ogni gusto) 
+[x] straccetti di soia grigliati (vorrei provare.. sempre se ci sono)
+[x] Fegato
+[ ] Parmigiano 
+[ ] Peperoni rossi 2 max 3 di numero 
+[ ] Spinaci o erbette 2
+[ ] 
+[x] Pomodorini 
+[x] Prosciutto crudo 1hg 1/2 
+[x] Limoni 2 
+[x] Anguria piccola
+[x] Melone 1 
+[x] Prosciutto cotto 2hg 
+[x] Zucchine
+[x] Fragole 2 cestini
+[x] Semi di Chia 
+[x] Insalata mista con rucola 
+[x] Patate 1,5 kg
+[x] Insalata piccola (insalatina)
+[x] Uva bianca (se bella)
+[x] Pesche 7-8
+[x] Banane
+[x] Pinoli 2 sacchetti 
+[x] Cavolo viola
+[x] Asparagi (solo 1 per sugo)
+[x] Albicocche 
+[x] Fichi secchi 
+[x] Verza 1 
+[x] Zucca tocchetti 2
+[x] Melanzane (2) 
+[x] Insalata mista grande 
+[x] Patate dolci 
+[x] Uvetta passa 
+[x] Avocado
+[x] Mandorle 500 g
+[x] Finocchi 3
+[x] Verdura
+[x] Humus
+[x] Guacamole
+[x] Tarassico 
+[x] Nocciole
+[x] Erba cipollina 
+[x] Menta
+[x] Bbmix fonte di magnesio e potassio per insalate 
+[x] Mirtilli rossi 
+[x] Mirtilli blu
+[x] Amaranto
+[x] Bacche di goji
+[x] Pistacchi
+[x] Cavolini di Bruxelles 
+[x] Zenzero 
+[x] Curcuma 
+[x] Pecorino da grattugiare 
+[x] Alloro
+[x] Bbmix macedonia 
+[x] Quinoa
+[x] Lievito 
+[x] Prezzemolo fresco
+[x] Semi di lino 
+[x] Barbabietola 
+[x] Cacciatorini 1-2
+[x] 3 melograni 
+[x] Uva sultanina
+[x] Semi chia 
+[x] Prugne secche 
+[x] Cicoria
+[x] Salvia foglie fresche
+[x] Frutta grattugiata confezionata (nelle ciotoline di alluminio) 
+[x] Caki 
+[x] Funghi 2 
+[x] Mortadella 2hg
+[x] Bresaola 
+[x] Arance 4-5
+[x] Kiwi 5
+[x] Salame a fette grandi per antipasto (no cacciatorino) 2hg 
+[x] Insalatina + sarsette (2 sacchetti piccoli
+[x] Sedano (poco) 
+[x] Pomodori cuore di bue solo 2
+[x] Mele gialle 
+[x] Salame a fette per panini 
+[x] Clementine 
+[x] 2 cipolle bianche
+[x] Tacchino arrosto a fettine 2hg 
+[x] Pere Williams bianche 4
+[x] Champignons 
+[x] 1 avocado
+[x] Ananas 
+[x] Carote 1kg
+[x] 1-2 cetrioli (non di più) 
+[x] Ramasin (no susine o prugne)
+[x] Cipolla normale 1 
+[x] Aglio 
+[x] Cipolle
+[x] Broccoli 2-3 
+[ ] Uova 30
+[ ] 2 teglie alluminio circa 40x20
+[x] Spazzolino per miki non tanto grande ma non da bimbi piccoli 
+[x] Sale grosso 1 kg 
+[x] Cracker 
+[x] Pane 3 sacchetti 
+[x] Pan bauletto 
+[x] Sacchetti cuki gelo formato medio 23x32cm 
+[x] Pane Marco (se lo vuoi)
+[x] Biscotti nei pacchetti piccoli per merenda 
+[x] Biscotti colazione (scorta ) 
+[x] Brioche 1 pacco (trancini) 
+[x] Panettone mandorlato 1
+[x] Latte avena 2
+[x] Bevanda Riso & cocco 2
+[x] Pandoro 1 
+[x] Panforte di siena 1
+[x] Uova 12 
+[x] Sacchetti cuki gelo formato grande (cm 29*42) 
+[x] Shampoo neutro per tutti grande 2 
+[x] Ketchup 1 
+[x] Olive nere denocciolate saclà 2 
+[x] Rosmarino secco nel botticino 
+[x] Coca cola 2 + Fanta 2
+[x] Dentifricio elmex adulti 1 
+[x] Dentifricio mentadent alito puro 1 
+[x] Dentifricio elmex junior 6-12 anni 
+[x] Caffè solubile Nescafé 
+[x] Caffè Lavazza qualità rossa 
+[x] Salviettine igiene intima attive 2 
+[x] ABC della merenda 2
+[x] Detersivo liquido per lavare a mano e lavatrice capi delicati e lana 
+[x] Colla stick media (conf da 2 o 3) 
+[x] Maionese 1
+[x] Salsa alle erbe 1
+[x] Besciamella piccola 2 
+[x] Lievito Bartolini
+[x] Farina 1 kg tipo 00 
+[x] Marmellata ( lamponi + albicocca + castagne)
+[x] Sale per lavastoviglie 
+[x] Carta da forno 
+[x] Candelina nr 4 bianca contorno giallo e puntini colorati
+[x] Gocce di cioccolato 1conf 
+[x] Prosecco 1 bottiglia 
+[x] Ammorbidente 2 
+[x] Divisori colorati 
+[x] Tonno 2 
+[x] Vanilla tea Twinings
+[x] Detersivo polvere fustino o ricarica 
+[x] Bicchiere di Nutella 1
+[x] Deodorante spray Infasil neutro antimacchia 2
+[x] Pennarello indelebile nero punta FINE
+[x] 1 quadernone a quadretti da 1 cm x miki
+[x] Pennarelli turbo giotto punta fine 24
+[x] Sacchetti trasparenti per plastica grandi scorta 4
+[x] Erba cipollina secca nel barattolo 
+[x] Zucchero bianco 1kg
+[x] Latte intero
+[x] Bormioli 1,5 l
+[x] Adattatore spina piccola e prese grandi colore bianco 
+[x] Nivea struccante occhi doppia azione con estratto di fiordaliso 2 
+[x] Orzoro 
+[x] Succhi piccoli pesca e mela solo 2
+[x] Cioccolato fondente (tavoletta enorme) 
+[x] Cioccolato fondente 250-300gr
+[x] Olio di semi di girasole 
+[x] Candeline numeri (mandami foto)
+[x] Fette biscottate (no Esselunga) scorta
+[x] Farina di castagne 120g
+[x] Zucchero di canna 1 kg non integrale 
+[x] Estratto di vaniglia 
+[x] Pangrattato 
+[x] Panecioc 
+[x] Guanti in lattice 
+[x] Olio extra vergine di oliva 2 
+[x] Kleenex (3)
+[x] Doccia shampoo 2 non enormi per miki
+[x] Tavernello bianco 1 
+[x] Spazzolino oral B indicator 1-2-3 
+[x] Barrette kinder maxi 
+[x] Sacchetti cuki gelo formato piccolo 19x26cm 
+[x] Carta da regalo grande o borsa grande
+[x] 1 quaderno piccolo a righe di 3a elementare 
+[x] Panna da cucina 2 
+[x] Piselli in scatola 
+[x] Detersivo piatti (scorta) 
+[x] Raid scarafaggi e formiche
+[x] Nesquik 
+[x] Pile CR2032 lithium 3v per bilancia cucina (rotonde piatte diametro 2cm) 
+[x] Panni swiffer pavimenti 
+[x] Copertina azzurra per quadernone
+[x] 1 quadernone a quadretti 0.5 cm con margini (miki) 
+[x] Bottigliette acqua gasata 500 ml (6) 
+[x] Accendigas 
+[x] Zampironi 
+[x] Balsamo  (quello che prendi tu)
+[x] Doccia schiuma neutro grande 2
+[x] Balsamo Elvive total repair (bianco) 
+[x] balsamo garnier ai fiori di loto 
+[x] te alla vaniglia 
+[x] Tavolette per WC candeggina 2 conf 
+[x] Bottigliette acqua naturale 500 ml (6) con tappo a beccuccio 
+[x] Cerotti 2 misure 
+[x] Palloncini colori misti (no forme strane) 
+[x] Salmone in scatola (2) 
+[x] Baileys Irish Cream
+[x] Cartone succo d'ananas
+[x] 2 bicchieri Natale Nutella 
+[x] Spugne per piatti gialle e verdi 
+[x] Plasmon
+[x] Pasta 
+[x] Grissini
+[x]  sun kissed 026 terra in polvere
+[x] Sapone solido
+[x] Sale fino 1 kg 
+[x] pinoli 
+[x] Forbici 
+[x] Pinzatrice 
+[x] Cottonfioc 
+[x] Marmellata di lamponi
+[x] Ombrello da borsetta unisex o maschile per i ragazzi 
+[x] Fogli grandi a righe con buchi e margini rinforzati 
+[x] Zucchero bianco Zefiro 1 kg
+[x] Fogli protocollo a quadretti di 4mm 
+[x] 2 avocado
+[x] Pastiglie per lavatrice (detersivo e ammorbidente insieme) vedi foto 
+[x] Pastiglie per lavastoviglie (scorta)
+[x] Lines seta ultra arancione cm 20,5 
+[x] Birra 
+[x] Paletta alta
+[x] 2 vassoi ovali alluminio
+[x] deodorante travel size
+[x] Bicchieri carta bianco avorio da caffè 25
+[x] Bicchieri carta 50 bianco.avorio
+[x] dentifricio travel size
+[x] Piatti di carta quadrati da portata (no da dolce) color bianco avorio 100
+[x] 50 Stecchini 25 cm di legno per spiedini
+[x] amuchina meno 100 ml
+[x] contenitori per travasare shampoo travel size
+[x] Barattolo da 2 litri
+[x] Marmellata fichi 2
+[x] Mais 
+[x] Forchette plastica 50
+[x] Piatti di carta per vacanze (50) 
+[x] Risma A4 
+[x] Crystal pacco da 20 (non molicce)
+[x] Autan tropicale spray antizanzare 
+[x] Saugella attiva verde 
+[x] Anitra WC con beccuccio per pulire water (candeggina) 3
+[x] Shampoo Elvive color vive 2in1 (rosso) 
+[x] Candeggina ACE 2
+[x] Tutto panno carta 
+[x] Panna montata spray 
+[x] 3 lampadine attacco grosso oer camera dei ragazzi 
+[x] Origano tritato secco nel barattolo 
+[x] Bialcol (non altri disinfettanti) 
+[x] Acqua ossigenata 
+[x] Fonzies nei pacchetti piccoli (1 solo pacco)
+[x] Faldine cotone piccole per strucco - 3 sacchetti 
+[x] torta pan di stelle (impo)
+[x] torta limone mulino bianco (impo)
+[x] Pile stilo 
+[x] Il mio brodo di manzo Star 1 litro 
+[x] Dentifricio sensodiny
+[x] Gallette di riso
+[x] Cioccolato Marco
+[x] Tè alla vaniglia 
+[x] Evidenziatore giallo 
+[x] Dentifricio Parodontax complete protection 1 
+[x] Stracci 
+[x] Colomba classica 2
+[x] Besciamella grande 
+[x] Pelati scorta 
+[x] Pellicola rotolo 
+[x] Brillantante liquido per lavastoviglie
+[x] Tuc
+[x] Attack colla (se possibile conf con 3 piccoli)
+[x] Frixion verde ricambi
+[x] Frixion blu ricambi 
+[x] Quaderno grande a quadretti da 5mm con margini per miki 
+[x] Frixion blu penna senza tappo se possibile
+[x] Zafferano bustine 
+[x] Lines seta ultra LUNGO con ali (viola scuro) 
+[x] 200g cioccolato fondente 
+[x] Compresse pulenti per dentiere/apparecchi es. Polident
+[x] Frixion rossa biro
+[x] Frixion rossa ricambi 
+[x] Burrocacao blu Labello
+[x] Amuchina gel disinfettante mani piccolo 2 (NO ALTRE MARCHE)
+[x] Caffettiera Bialetti 3 tazze alluminio 
+[x] Popcorn 
+[x] Guarnizioni e ricambio caffettiera Bialetti da 3 tazze
+[x] Pompadour zenzero e limone 
+[x] Pompadour garofano e cannella
+[x] Nutella B ready 
+[x] Zucchero Eridania Zefiro 1kg 
+[x] Mulino bianco biscottone 
+[x] Mulino bianco abbracci
+[x] Riso normale 1kg
+[x] Riso non. Integrale per insalata di riso 1 kg 
+[x] Pile ministilo  
+[x] 1 pandoro e 1 panettone 
+[x] 125 g farina di mandorla
+[x] zucchero a velo
+[x] 60g nocciole
+[x] colla attak
+[x] Swiffer (ricariche panni per pulire pavimenti )
+[x] Ciobar bustine per cioccolata
+[x] Terriccio marrone o sassolini bianchi per presepe
+[x] Miele di acacia 
+[x] Lampadine macchina
+[x] 1 quadernone a righe di seconda con margini (miki) 
+[x] Nutella piccola bicchiere natalizio 2
+[x] Mulino bianco Primizie 
+[x] Cereali Gabriele (min 3) 
+[x] 6 Bottiglie acqua naturale 1,5 l
+[x] Mulino bianco macine 
+[x] Olive 
+[x] Swiffer Duster  (NO per pavimenti) strumento + panni ricarica da mettere sullo strumento per togliere ragnatele 
+[x] Preparato per budino elah creme caramel già zuccherato 2 (per 1 litro)
+[x] spugna conjak Garnier 
+[x] Nescafe Classic 200g 
+[x] Dentifricio Marco 
+[x] DAS
+[x] Ammoniaca 
+[x] Dentifricio Elmex sensitive 
+[x] Quaderni grandi righe no margini 2
+[x] Quaderno grande a righe di 2ª  elementare con margini 
+[x] Schiacciatine gusto normale 
+[x] Sapone liquido mani ricarica 2 
+[x] Detergente intimo neutro 2 
+[x] Sacchetti rsu scorta 
+[x] Stuzzicadenti 
+[x] Barchette di cioccolato choco pops (2)
+[x] Il mio brodo vegetale star 1 litro 
+[x] Paprika
+[x] Marmellata di castagne
+[x] Cioccolato amaro in polvere
+[x] Restivoil 6.69 
+[x] Shampoo Garnier oliva 
+[x] tonico garnier bio al timo 
+[x] Dispenser igienizzante grande (se non c'è lo prendo in farmacia)
+[x] Frixion viola e ricariche 
+[x] Solvente per unghie 
+[x] 1 bottiglia coca cola
+[x] 1 bottiglia grande di succo di ananas 
+[x] 1 Bottiglia di moscato 
+[x] 1 bottiglia di malvasia o fragolino
+[x] 2 tavolette grandi di cioccolato fondente
+[x] Quadernone ad anelli nero
+[x] farina di mandorla
+[x] baccello di vaniglia
+[x] coloranti alimentari
+[x] Cannella
+[x] 1 bottiglia di spumante dolce 
+[x] Tachipirina compresse 500 mg 
+[x] Quadernone ad anelli arancione
+[x] Pesto non di frigo (Tigullio)
+[x] Gomma bianca staedtler 1.99 
+[x] Penna sferografica (non di colore  rosso esternamente) + cartucce rosse
+[x] Fogli protocollo a righe (se ci sono) 
+[x] Piantina prezzemolo per vaso balcone
+[x] Scottex casa (scorta) 
+[x] Strisce rosa ceretta
+[x] Spugne quadrate colorate Vileda 
+[x] Lysoform bagno spray 2
+[x] Catino piccolo
+[x] Sapone mani con beccuccio per ferie 1
+[x] Cuffia per doccia di plastica
+[x] Prodotto per lucidare il legno
+[x] Bicchieri plastica 100
+[x] Propoli
+[x] Dentifricio AZ 15 
+[x] Coco Pops 
+[x] Codini neri
+[x] Forcine per capelli marroni
+[x] Tè alla pesca (no bibita)
+[x] Ventilatore da pavimento 
+[x] 1 pantalone lungo tipo tuta per te
+[x] Prodotto per pulire la pelle 
+[x] Salviette mani da borsetta 
+[x] Funghetti sott'olio piccoli 
+[x] Galosce
+[x] Peperoni in agrodolce 
+[x] Wc net sturascarichi  (idraulico liquido) 
+[x] 2 sughi pronti barilla
+[x] Wc net fosse biologiche (pastiglie da buttare nel wc) 
+[x] Salvaslip Lines intervallo rosa nei pacchetti singoli 
+[x] Blocchetto Foglietti colorati e post it gialli
+[x] Lysoform pavimenti 
+[x] Polaretti cannucce cioccolato 
+[x] Cacao amaro in polvere
+[x] Savoiardi 3 pacchi 
+[x] bianchetto per scuola con pennellino
+[x] Te sfuso twinings giallo
+[x] Sacchetti cuki formato piccolo (17*22) 
+[x] Spray bayer per afidi
+[x] Farina 1 manitoba
+[x] Farina di riso 
+[x] Farina di cocco 
+[x] Caramelle per la chiesa 
+[x] Wc net disincrostante gel (Anitra wc) 2
+[x] Viakal (no spray) bottiglia un po' alta con beccuccio 1
+[x] Dadi star vegetali 
+[x] Olive condite da antipasto 
+[x] Tic tac
+[x] Viakal spray 2 
+[x] Cif crema
+[x] Mascherine miki
+[x] Aceto di vino 
+[x] Torcetti scatola rotonda 
+[x] Quadernone ad anelli
+[x] Cialda 
+[x] Alberello profumato
+[x] Benza
+[x] Sgrassatore spray Chante Claire 
+[x] Kinder brioss 
+[x] Tasselli per quadri 
+[x] Scotch trasparente 
+[x] Terriccio per presepe (sabbia fine rossiccia)
+[x] 5 Vaschette alluminio Cuki rettangolari alte 10 porzioni per forno e microonde
+[x] Tovaglia di carta gialla 
+[x] Birre moretti bionde 3 conf da 3
+[x] 2 bottiglie acqua gasata
+[x] 2 bottiglie acqua naturale
+[x] 1 bottiglia di Fanta 
+[x] 1 bottiglia tè freddo pesca 
+[x] 1 succo grande ananas
+[x] Moscato 2 bottiglie 
+[x] De Cecco mezzi rigatoni nr 26, 1 kg
+[x] Mais per fare popcorn (no microonde)
+[x] Riso basmati 
+[x] Bicchieri carta grandi per popcorn
+[x] Baci di dama 3 confezioni 
+[x] Das
+[x] Limoncello
+[x] Valigetta plastica per Paolo (cm 55x45x7cm circa)
+[x] Detergente liquido capelli e corpo Mustela 
+[x] Fermenti lattici enterolactis bevibile adulti e bambini oppure lactoflorene bevibile 
+[x] Fogli da disegno F4 lisci riquadrati
+[x] Lines seta ultra con ali (viola chiaro) 24 cm 
+[x] Bustina lievito per dolci
+[x] Pinza per cibo
+[x] Spazzola di Plastica per pulire il cortile
+[x] Mezze penne normali 5 kg 
+[x] Mezze penne integrali 2kg 
+[x] Carta stagnola 
+[x] Amuchina bottiglia 
+[x] 2 coca cola, 1 tè limone
+[x] Polenta precotta 
+[x] Acqua gasata 6 bottiglie 
+[x] Maalox reflurapid
+[x] Omeprazolo sandoz 20mg
+[x] Feltrini bianchi 3x3 cm circa o più grandi 
+[x] Senape 
+[x] Bbq sauce 
+[x] Carciofini 
+[x] Acqua Marco 
+[x] Copriasse da stiro (40 *130) 
+[x] Fischietto per miki con cordino se possibile 
+[x] Contenitore plastica per alimenti ml 520 Lock&Lock
+[x] Contenitore plastica per alimenti 950 ml Lock&Lock
+[x] Contenitore plastica per alimenti Lock&Lock sui 300-350 ml (più di 250)
+[x] Batteria 9V 
+[x] Corn flakes
+[x] 1 bottiglia di passata di pomodoro mutti
+[x] Dolcetto vino
+[x] Crema spalmabile Pan di Stelle (tipo Nutella)
+[x] Magnesio
+[x] Vitamina d
+[x] Té alla menta
+[x] Forbici per scuola per Paolo 
+[x] Feltrini marroni grossi da tagliare 
+[x] Barrette proteiche 
+[x] Biscotti Baiocchi
+[x] Tarallini 
+[x] Stelline Barilla 1 kg 
+[x] Fichi secchi 
+[x] Carta lucida blocchetto
+[x] Bacon
+[x] Vetril spray con antipolvere 1
+[x] Lacci marroni fini, 5 buchi
+[x] Biscotti alla cannella per regalo miki
+[x] Sogni d'oro Finocchio... 
+[x] Farina normale 1kg 
+[x] Coperchio per tegame antiaderente diametro 28 cm (vetro) 
+[x] 500 g totali di cioccolato fondente
+[x] Penne bic nere
+[x] 175g nocciole spellate tostate 
+[x] Carrefour fibra flakes cioccolato 
+[x] 135g burro
+[x] Bacche di goji 
+[x] Gessetti colorati
+[x] Sacchetti per aspirapolvere Miele compact C2 best parquet ecoline (codice ME3) 
+[x] Lievito per dolci 
+[x] Gel per capelli
+[x] Piatti di plastica azzurri fondi 50
+[x] Pettine per ragazzi
+[x] Patatine pacco grande
+[x] Latte di mandorla 2 
+[x] 3 succhi grandi pesca (zuegg) e ananas
+[x] Gel anti formiche ( no polvere)
+[x] Bastone per mocio
+[x] Bolle di sapone 
+[x] Pepe nero già macinato in barattolino 
+[x] Zenzero fresco 
+[x] Creatina
+[x] air vigorsol action cicles ( confezione blu o verde)
+[x] Uva passa
+[x] Compasso
+[x] Fazzoletti di carta 
+[x] Squadrette piccole 
+[x] Semi di lino
+[x] 2 Candeline a forma di 4
+[x] 4 lampadine E27 max 60w opache, se possibile (per applique scale) 
+[x] Polase
+[x] Spaghetti n. 5, 1 kg 
+[x] Tavolette WC da attaccare alle pareti del water,non con gancetto 
+[x] Teriyaki sauce 
+[x] Latte di mandorla alto
+[x] 1 tè freddo pesca
+[x] Temperino con contenitore per Paolo 
+[x] 1 notes per Paolo 
+[x] Crema protettiva solare 30 
+[x] Spago 
+[x] Vim liquido (cambio) 
+[x] 1 bottiglia acqua gasata 
+[x] Righello 20 cm per Gabriele 
+[x] Peperoncino in polvere 
+[x] Succo di mirtillo Fiorentini  blu 2 
+[x] Contenitore sterile x urine
+[x] Melatonina 
+[x] Piattini di plastica azzurri 
+[x] Polase
+[x] Polaretti
+[x] Semi di sesano
+[x] 2 Torte mulino bianco pan di stelle
+[x] Candeline azzurre 
+[x] Spugna abrasiva per piedi
+[x] Mascara occhi nero 
+[x] Panni microfibra Vileda per pulire (dovrebbero essere gialli)
+[x] Tachipirina sciroppo 
+[x] Cicles air vigorsol blu
+[x] Super attack
+[x] Rotolo grande asciugatutto oppure tutto panno carta
+[x] Riso 1 kg integrale cottura veloce 
+[x] Cannucce snodabili (confezione piccola) 
+[x] Condiriso Ponti 1 vasetto
+[x] Farina integrale 1 kg
+[x] Liquirizia
+[x] 2 Budino elah (da fare) cioccolato 
+[x] Rotolo carta trasparente per foderare libri 
+[x] Napisan grande
+[x] Enervit
+[x] 1 mocio vileda ricambio (tipo semplice) 
+[x] Dentifricio AZ pro EXPERT 
+[x] Profumo macchina
+[x] Barilla farfalline
+[x] Riso
+[x] Marsala all'uovo
+[x] Noce moscata
+[x] Soia in scatola
+[x] Curcuma 
+[x] The alla pesca in bustine per infuso 
+[x] Termometro analogico 
+[x] Goleador
+[x] Cotone idrofilo
+[x] 3 paia di toppe per pantaloni da bambino (2 blu scuro e 1 grigio chiaro)
+[x] Cipolla in polvere
+[x] Sciroppo di menta
+[x] Riso per insalate normale
+[x] Doposole
+[x] Lamette da barba
+[x] Tergicristalli 
+[x] Carta igienica
+[x] Testine per spazzolino
+[x] Salvia tritata secca barattolo
+[x] Cancellino per stilografica 
+[x] Lampadina grossa rotonda per lampadario cucina 
+[x] Tantum verde gola spray 
+[x] Crema foille per scottature 
+[x] Scatole lenticchie
+[x] Farina di avena integrale 
+[x] Farina di grano saraceno integrale 
+[x] Farina di sorgo integrale 
+[x] Soletta in feltro (1)
+[x] Soletta carbone attivo
+[x] Dopobarba 
+[x] Brugole
+[x] White strips
+[x] Lipton herbal infusion warming apple
+[x] Dopobarba
+[x] Sottopiedi carbone attivo (1 paio) e sughero - cotone 
+[x] Latte
+[x] Filo interdentale 
+[x] Pomodoro concentrato
+[x] Biscotti della salute 
+[x] Olive donocciolate nere
+[x] lampadine led 6.90
+[x] Tappi per le orecchie 
+[x] Tè
+[x] Vickiniset
+[x] Colazione marco 
+[x] quaderno a spirale a righe  (anche quello con le pagine colorate)
+[x] Citrosodina 
+[x] Schiuma da barba 
+[x] Olive taggiasche
+[x] Saugella azzurra ph 3.5 
+[x] Olive
+[x] Fusilli 1kg normali
+[x] farro
+[x] semi di canapa
+[x] 3 pile (mezze torce) 1,5 volte LR-C
+[x] Cetrioli
+[x] Crauti
+[x] Borsa frigo per lavoro
+[x] Chupa-chupa coca cola 
+[x] Bottiglia vetro per acqua bianca o gialla 
+[x] 1 bottiglia vino bianco chardonnay o arneis
+[x] Crunchy muesli mandorle e fragole
+[x] Muschio e terriccio per presepe (sabbolina marrone)
+[x] Curry
+[x] Benda elastica autofissante PIC
+[x] Spina piccola
+[x] Riga 50 cm
+[x] Tea Immuno Time
+[x] 5 pile stilo (di numero, max 6)
+[x] Panno spugna azione assorbente 18x20 cm, Arcasa, 3 pezzi 
+[x] Quinoa
+[x] Borotalco 
+[x] Mucosolvan sciroppo
+[x] Terriccio per vasi ciclamini (1 sacco piccolo)
+[x] Shampoo 
+[x] Pila parallelepipedo 2 
+[x] Tè alla menta (o menta piperita pompadour)
+[x] Spray impermeabilizzante per scarpe e indumenti 
+[x] Acqua lauretana
+[x] Quaderno piccolo a righe di prima con margini 
+[x] Quaderno piccolo a quadretti da 5mm con margini 
+[x] Latte di riso e cocco
+[x] Teglie di alluminio con diametro di almeno 28 cm
+[x] Lucido per scarpe marrone medio-scuro 
+[x] Guanti per piatti misura S
+[x] Bicarbonato di sodio 
+[x] Succo mirtillo rosso 1 
+[x] shampoo all'argan marca OMIA
+[x] Lucido per scarpe nero Ebano 
+[x] 400g nocciole tostate
+[x] olio per capelli OMIA noci di macadamia/argan (quello che c'è)
+[x] cacao magro in polvere
+[x] Snack vitasnella (2 conf) 
+[x] maschera capelli garnier ultradolce al latte di mandorla
+[x] Dentifricio oral b gengive&smalto (con sconto)
+[x] Piadine 
+[x] Olio di cocco 
+[x] Torta pere e cioccolato o al limone Carrefour 1
+[x] Burro di arachidi 
+[x] Stendibiancheria
+[x] Olive denocciolate nere 
+[x] Detersivo polvere per lavatrice ricarica (o fustino) 
+[x] Sacchi neri grossi 70x110 (3-4 per scorta)
+[x] Granite 2 conf da 2
+[x] Rotoloni giganti scottex 2
+[x] detergente garnier bio lemongrass
+[x] salvaspazio piccoli
+[x] Scopettino WC
+[x] Maniglie
+[x] Scopa con paletta 
+[x] Paletta con manico lungo
+[x] Guanto di crine
+[x] Biscotti colazione 2 pacchi per Bergamasco 
+[x] Carta da lucido
+[x] tempere giotto (colori primari)
+[x] olio viso garnier bio alla lavanda
+[x] Quadernone a righe di V con margini 
+[x] camomilla
+[x] Marsala secco 
+[x] Fagioli borlotti 
+[x] Farina
+[x] Lievito per pane
+[x] Quaderno piccolo ad anelli colore azzurro 
+[x] Camomilla bustine 
+[x] Grignolino 1 bottiglia
+[x] Matite HB (più di una)
+[x] Burro di cocco
+[x] Prugne secche 
+[x] Riso integrale x Marco 
+[x] Cocco sminuzzato
+[x] Cura lavastoviglie 
+[x] Shampoo 
+[x] Quadernone a quadretti da 1 cm, se possibile coi margini 
+[x] Candelina n.7
+[x] Contenitore x Marco
+[x] Fiocchi d'avena 
+[x] Lampadine led (4)
+[x] Frutti per lampadine (3)
+[x] Burro di arachidi (per ragazzi)
+[x] Lampadina piccola per bagno 
+[x] Lampadina (foto) 
+[x] Spaghetti Barilla 5 cereali 500 g
+[x] Scopa di saggina
+[x] Scotch di carta alto 1
+[x] Balsamo crema garnier vaniglia e papaya 
+[x] La stampa
+[x] Succo di pomodoro
+[x] Succo di barbabietola
+[x] Post it gialli 
+[x] Gran Pavesi pomodoro e grana 
+[x] Acqua di cocco
+[x] Sale da cucina grosso 1 kg 
+[x] Beker 2
+[x] Mirtilli blu 
+[x] Lasagne all'uovo Carrefour 500g vedi foto
+[x] Burrocacao Labello Care and Colour, Nude 
+[x] Appendiabiti per camera nostra
+[x] Shampoo per bambini 2
+[x] Teglia da forno rotonda per torta salata
+[x] pacchetti fazzoletti
+[x] Dentifricio Marco
+[x] crema mani marco
+[x] Condiriso Ponti 1 vasetto 
+[x] Vitasnella frollini cereali frutti rossi 2
+[x] olio per friggere
+[x] hummus di ceci (se c'è)
+[x] lenticchie
+[x] ceci in scatola precotti
+[x] 3 quaderni con la spirale a righe
+[x] 1 quaderno a quadretti
+[x] Cioccograno mulino bianco
+[x] Biscotti Gran cereale
+[x] B-ready
+[x] Kinder Sorpresa 
+[x] nocciole intere spellate 175g
+[x] nutella
+[x] 1 quadernone a righe normali coi margini 
+[x] busta caramelle galatine
+[x] te alla pesca
