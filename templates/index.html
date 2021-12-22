@@ -10,7 +10,18 @@
     <head>
 	<style>
 	    .button1 {
-		max-height:20px;
+		background-image: url("{{url_for('static', filename='Accept-icon.png')}}");
+         	background-size: cover;
+		width: 20px;
+		height: 20px;
+		font-size: 2rem;
+	    }
+	    .button2 {
+		background-image: url("{{url_for('static', filename='arrow-up-icon.png')}}");
+         	background-size: cover;
+		width: 20px;
+		height: 20px;
+		font-size: 2rem;
 	    }
 	    .input1 {
 		font-size:12px; 
@@ -34,6 +45,10 @@
 		max-width:40px; 
 		max-height:20px;
 	    }
+	    .input6 {
+		font-size:12px;
+		max-width:50px; 
+	    }
 	    .s {
 		font-size:8px; 
 		max-width:10px; 
@@ -46,33 +61,90 @@
 	<script src="//code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
 	
 	<script type="text/javascript">
-	$(function() {
-	    $("#autocomplete").autocomplete({
-		source:function(request, response) {
-		    $.getJSON("{{url_for('autocomplete')}}",{
-			q: request.term, // in flask, "q" will be the argument to look for using request.args
-		    }, function(data) {
-			response(data.matching_results); // matching_results from jsonify
-		    });
-		},
-		minLength: 2,
-		select: function(event, ui) {
-		    console.log(ui.item.value); // not in your question, but might help later
-		}
-	    });
-	})
-
-	</script>
-	
-	<script type="text/javascript">
 	$( function() {
 	    var availableTags = [
 		{% for product in products %}
-		"{{product.name}}",
+		{
+		    id: "{{product.id}}",
+		    label: "{{product.name}}", 
+		    quantity: "{{product.quantity}}",
+		    category: "{{product.category}}",
+		},
 		{% endfor %}
 	    ];
-	    $( "#autocomplete2" ).autocomplete({
-		source: availableTags
+	    var categoryTags = [
+		{
+		    label: "Varie",
+		    value: 0,
+		},
+		{
+		    label: "Scuola",
+		    value: 10,
+		},
+		{
+		    label: "Vestiti",
+		    value: 15,
+		},
+		{
+		    label: "Pentole",
+		    value: 20,
+		},
+		{
+		    label: "Cura della Persona",
+		    value: 25,
+		},
+		{
+		    label: "Detersivi",
+		    value: 30,
+		},
+		{
+		    label: "Pane",
+		    value: 35,
+		},
+		{
+		    label: "Colazione",
+		    value: 40,
+		},
+		{
+		    label: "Pasta",
+		    value: 45,
+		},
+		{
+		    label: "Latte",
+		    value: 50,
+		},
+		{
+		    label: "Succhi",
+		    value: 55,
+		},
+		{
+		    label: "Verdure",
+		    value: 60,
+		},
+		{
+		    label: "Freddi",
+		    value: 65,
+		},
+		{
+		    label: "Carni",
+		    value: 70,
+		},
+		{
+		    label: "Sugelati",
+		    value: 75,
+		},
+	    ];
+	    $( "#autocomplete" ).autocomplete({
+		source: availableTags,
+		select: function(event, ui) {
+		    //console.log(ui.item.id); // not in your question, but might help later
+		    document.getElementById('id').value=ui.item.id;
+		    document.getElementById('quantity').value=ui.item.quantity;
+		    document.getElementById('category').value=ui.item.category;
+		}
+	    });
+	    $( "#category" ).autocomplete({
+		source: categoryTags,
 	    });
 	} );
 	</script>
@@ -91,14 +163,13 @@
 	{% for product in spesa %}
 	    <div class="m-1 input-group mb-0" style="font-size:8px;">
 		<form action="{{product.id}}/take" method="POST" >
-		    <button class="btn btn-success button1" type="submit">
-			<img style="max-height:20px;" src="{{url_for('static', filename='Accept-icon.png')}}"/>
-		    </button>
+		    <button class="btn btn-success button1" type="submit"></button>
 		</form>
 		<input class="form-control input1" type="text" value="{{product.name}}" disabled>
 		<form action="{{product.id}}/update" method="POST">
 		    <input type="text" name="quantity" class="form-control input2" value="{{product.quantity}}">
 		</form>
+		<input type="text" class="form-control input5" name="category" value="{{product.category}}" disabled>
 	    </div>
 	{% endfor %}
 	<div class="my-3 mx-1">
@@ -106,25 +177,26 @@
 		<button class="btn btn-warning" type="submit">
 		    <img src="{{url_for('static', filename='add-icon.png')}}"/>
 		</button>
-		<input id="autocomplete2" type="text" class="form-control input3" name="name" placeholder="Product" required>
-		<input type="text" class="form-control input3" name="quantity" placeholder="Quantity: 1" required>
-		<input type="text" class="form-control input3" name="category" placeholder="Category: 0" required>
+		<input type="hidden" id="id" name="id" value="-1">
+		<input type="text" id="autocomplete" class="form-control input3" name="name" placeholder="Product" required>
+		<input type="text" id="quantity" class="form-control input6" name="quantity" placeholder="Q: 1" required>
+		<input type="text" id="category" class="form-control input6" name="category" placeholder="C: 0" required>
 	    </form>
 	</div>
 	{% for product in products %}
-	    <form action="{{product.id}}/add" method="POST">
-		<div class="m-1 input-group mb-0">
-		    <button class="btn btn-primary button1" type="submit" id="button-addon1">
-			<img class="button1" src="{{url_for('static', filename='arrow-up-icon.png')}}"/>
-		    </button>
-		    <span class="input-group-text s">P</span>
-		    <input class="form-control input1" type="text" name="name" value="{{product.name}}">
-		    <span class="input-group-text s">Q</span>
-		    <input type="text" class="form-control input4" name="quantity" value="{{product.quantity}}" required>
-		    <span class="input-group-text s">C</span>
-		    <input type="text" class="form-control input5" name="category" value="{{product.category}}" required>
-		</div>
-	    </form>
+	    {% if product.count > 0 %}
+		<form action="{{product.id}}/add" method="POST">
+		    <div class="m-1 input-group mb-0">
+			<button class="btn btn-primary button2" type="submit" id="button-addon1"></button>
+			<span class="input-group-text s">P</span>
+			<input class="form-control input1" type="text" name="name" value="{{product.name}}">
+			<span class="input-group-text s">Q</span>
+			<input type="text" class="form-control input4" name="quantity" value="{{product.quantity}}" required>
+			<span class="input-group-text s">C</span>
+			<input type="text" class="form-control input5" name="category" value="{{product.category}}" required>
+		    </div>
+		</form>
+	    {% endif %}
 	{% endfor %}
 	
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

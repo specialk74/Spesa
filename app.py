@@ -14,7 +14,7 @@ def connect():
 def index():
     connection = connect()
 
-    products = connection.execute('SELECT * FROM spesa WHERE toTake=0 ORDER BY count').fetchall()
+    products = connection.execute('SELECT * FROM spesa WHERE toTake=0 ORDER BY count, category').fetchall()
     spesa = connection.execute('SELECT * FROM spesa WHERE toTake=1 ORDER BY category').fetchall()
     
     connection.close()
@@ -63,18 +63,23 @@ def add(idx):
 def new():
     connection = connect()
         
+    idValue = request.form['id']
     name = request.form['name']
     quantity = request.form['quantity']
     category = request.form['category']
-        
+    
     cur = connection.cursor()
-    values = cur.execute('SELECT id,count FROM spesa WHERE name=?', (name,))
-    if values is not None:
-        idValue, count = values.fetchone()
-        count += 1
-        connection.execute('UPDATE spesa SET toTake=1, quantity=?, category=?, count=? WHERE id=?', (quantity, category, count, idValue))        
-    else:
-        connection.execute('INSERT INTO spesa (name, quantity, category, count, toTake) VALUES (?,?,?,0,1)', (name, quantity, category))
+    
+    if idValue is not -1 and name == "":
+        connection.execute('DELETE * FROM spesa WHERE id=?', (idValue,))        
+    else:        
+        values = cur.execute('SELECT id,count FROM spesa WHERE name=?', (name,))
+        if values is not None:
+            idValue, count = values.fetchone()
+            count += 1
+            connection.execute('UPDATE spesa SET toTake=1, quantity=?, category=?, count=? WHERE id=?', (quantity, category, count, idValue))        
+        else:
+            connection.execute('INSERT INTO spesa (name, quantity, category, count, toTake) VALUES (?,?,?,0,1)', (name, quantity, category))
     
     connection.commit()    
 
