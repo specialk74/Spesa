@@ -71,11 +71,12 @@ def new():
     cur = connection.cursor()
     
     if idValue is not -1 and name == "":
-        connection.execute('DELETE * FROM spesa WHERE id=?', (idValue,))        
+        connection.execute('DELETE FROM spesa WHERE id=?', (idValue,))        
     else:        
-        values = cur.execute('SELECT id,count FROM spesa WHERE name=?', (name,))
-        if values is not None:
-            idValue, count = values.fetchone()
+        values = connection.execute('SELECT id,count FROM spesa WHERE name=?', (name,)).fetchall()
+        if len(values) > 0:
+            idValue = values[0]['id']
+            count = values[0]['count']
             count += 1
             connection.execute('UPDATE spesa SET toTake=1, quantity=?, category=?, count=? WHERE id=?', (quantity, category, count, idValue))        
         else:
@@ -89,7 +90,7 @@ def new():
 @app.route('/<int:idx>/update', methods=('POST',))
 def update(idx):
     connection = connect()
-    connection.execute('UPDATE spesa SET quantity=? WHERE id=?', (request.form['quantity'], idx))
+    connection.execute('UPDATE spesa SET quantity=?, category=? WHERE id=?', (request.form['quantity'], request.form['category'], idx))
     connection.commit()    
 
     connection.close()
