@@ -56,6 +56,7 @@
 		max-height:20px;
 	    }
 	    tr:nth-child(even) {background-color: #f2f2f2;}
+	    
 	</style>
 	
 	<link href="//code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet"></link>
@@ -66,12 +67,31 @@
 	$(document).ready(function() {
 	  $('.submit_on_enter').keydown(function(event) {
 	    // enter has keyCode = 13, change it if you want to use another button
+	    //console.log( $(this).attr('id') )
+	    //console.log( thenum )
 	    if (event.keyCode == 13) {
-	      this.form.submit();
+	      //this.form.submit();
+	      
+	      var thenum = $(this).attr('id').replace( /^\D+/g, ''); // replace all leading non-digits with nothing
+	      //console.log( document.getElementById('quantity' + thenum).value )
+	      //console.log( document.getElementById('category' + thenum).value )
+	      document.getElementById('id_form').value=thenum;
+	      document.getElementById('quantity_form').value=document.getElementById('quantity' + thenum).value;
+	      document.getElementById('category_form').value=document.getElementById('category' + thenum).value;
+
+	      document.getElementById('update_form').submit();
 	      return false;
 	    }
 	  });
 	});
+	function AddUsersKeyDown(evtobj) {
+	    var target = evtobj.target || evtobj.srcElement;
+	    console.log(target.id);
+	    
+	    //console.log(document.getElementById('quantity').value);
+	    //console.log(document.getElementById('category').value);
+
+	};
 	$( function() {
 	    var categoryTags = [
 		{
@@ -186,24 +206,26 @@
 	    </form>
 	</div>
 	{% for product in spesa %}
-	    <div class="m-1 input-group mb-0" style="font-size:8px;">
 		<form action="{{product.id}}/take" method="POST">
+	    <div class="m-1 input-group mb-0" style="font-size:8px;">
 		    <button class="btn btn-success button1" type="submit"></button>
-		</form>
-		<input class="input1" type="text" value="{{product.name}}" disabled>
-		<form action="{{product.id}}/update" method="POST">
-		    <input type="text" name="quantity" class="input2 submit_on_enter" value="{{product.quantity}}">
-		    <input type="text" name="category" class="input5 submit_on_enter category" value="{{product.category}}">
-		</form>
+		    <input class="form-control  input1" type="text" value="{{product.name}}" disabled>
+		    <input type="text" name="quantity" class="form-control input2 submit_on_enter" value="{{product.quantity}}" id="quantity{{product.id}}">
+		    <input type="text" name="category" class="form-control input5 submit_on_enter category" value="{{product.category}}" id="category{{product.id}}">
 	    </div>
+		</form>
 	{% endfor %}
+	<form action="/update" id="update_form" method="POST">
+	    <input type="hidden" name="id"       id="id_form" value="-1">
+	    <input type="hidden" name="quantity" id="quantity_form" value="-1">
+	    <input type="hidden" name="category" id="category_form" value="-1">
+	</form>
 	<hr>
 	{% for product in products %}
 	    {% if product.count > 0 %}
 		<form action="{{product.id}}/add" method="POST">
 		    <div class="m-1 input-group mb-0">
-			<button class="btn btn-primary button2" type="submit" id="button-addon1"></button>
-			<span class="input-group-text s">P</span>
+			<button class="btn btn-primary button2" type="submit"></button>
 			<input class="form-control input1" type="text" name="name" value="{{product.name}}">
 			<span class="input-group-text s">Q</span>
 			<input type="text" class="form-control input4" name="quantity" value="{{product.quantity}}" required>

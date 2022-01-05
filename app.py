@@ -96,6 +96,18 @@ def update(idx):
     connection.close()
     return redirect('/spesa')
 
+@app.route('/update', methods=('POST',))
+def update2():
+    #print(request.form['id'])
+    #print(request.form['quantity'])
+    #print(request.form['category'])
+    connection = connect()
+    connection.execute('UPDATE spesa SET quantity=?, category=? WHERE id=?', (request.form['quantity'], request.form['category'], request.form['id']))
+    connection.commit()    
+
+    connection.close()
+    return redirect('/spesa')
+    
 @app.route('/<int:idx>/take', methods=('POST',))
 def take(idx):
     connection = connect()
