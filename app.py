@@ -14,7 +14,7 @@ def connect():
 def index():
     connection = connect()
 
-    products = connection.execute('SELECT * FROM spesa WHERE toTake=0 AND count > 1 ORDER BY count DESC').fetchall()
+    products = connection.execute('SELECT * FROM spesa WHERE toTake=0 ORDER BY count DESC').fetchall()
     #for item in products:
     #    print (item['name'])
     #    print (item['count'])

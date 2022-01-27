@@ -222,7 +222,7 @@
 	</form>
 	<hr>
 	{% for product in products %}
-	    {% if product.count > 0 %}
+	    {% if product.count > 1 %}
 		<form action="{{product.id}}/add" method="POST">
 		    <div class="m-1 input-group mb-0">
 			<button class="btn btn-primary button2" type="submit"></button>
