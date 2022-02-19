@@ -6,7 +6,7 @@ app = Flask(__name__)
 port = int(os.getenv("PORT", 9090))
 
 def connect():
-    connection = sqlite3.connect('database.db')
+    connection = sqlite3.connect('/home/pi/Spesa/database.db')
     connection.row_factory = sqlite3.Row
     return connection
 
@@ -122,5 +122,6 @@ def take(idx):
     return redirect('/spesa')
 
 if __name__ == '__main__':
+    print("port: " + str(port))
     app.run(host='0.0.0.0', port=port, threaded=True)
 
