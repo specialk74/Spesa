@@ -17,6 +17,132 @@
 		height: 20px;
 		font-size: 2rem;
 	    }
+	    .input_take0 {
+		font-size:12px; 
+		max-height:20px;
+		color: rgb(0, 0, 0);
+		font-weight: bold;
+	    }
+	    .input_take1 {
+		font-size:12px; 
+		max-height:20px;
+		color: rgb(128, 0, 0);
+		font-weight: bold;
+	    }
+	    .input_take2 {
+		font-size:12px; 
+		max-height:20px;
+		color: rgb(255, 0, 0);
+		font-weight: bold;
+	    }
+	    .input_take3 {
+		font-size:12px; 
+		max-height:20px;
+		color: rgb(0, 128, 0);
+		font-weight: bold;
+	    }
+	    .input_take4 {
+		font-size:12px; 
+		max-height:20px;
+		color: rgb(0, 200, 0);
+		font-weight: bold;
+	    }
+	    .input_take5 {
+		font-size:12px; 
+		max-height:20px;
+		color: rgb(0, 0, 128);
+		font-weight: bold;
+	    }
+	    .input_take6 {
+		font-size:12px; 
+		max-height:20px;
+		color: rgb(0, 0, 255);
+		font-weight: bold;
+	    }
+	    .input_take7 {
+		font-size:12px; 
+		max-height:20px;
+		color: rgb(128, 128, 0);
+		font-weight: bold;
+	    }
+	    .input_take8 {
+		font-size:12px; 
+		max-height:20px;
+		color: rgb(128, 0, 128);
+		font-weight: bold;
+	    }
+	    .input_take9 {
+		font-size:12px; 
+		max-height:20px;
+		color: rgb(0, 128, 128);
+		font-weight: bold;
+	    }
+	    .input_take10 {
+		font-size:12px; 
+		max-height:20px;
+		color: rgb(255, 128, 128);
+		font-weight: bold;
+	    }
+	    .input_take11 {
+		font-size:12px; 
+		max-height:20px;
+		color: rgb(255, 128, 0);
+		font-weight: bold;
+	    }
+	    .input_take12 {
+		font-size:12px; 
+		max-height:20px;
+		color: rgb(0, 128, 255);
+		font-weight: bold;
+	    }
+	    .input_take13 {
+		font-size:12px; 
+		max-height:20px;
+		color: rgb(64, 128, 170);
+		font-weight: bold;
+	    }
+	    .input_take14 {
+		font-size:12px; 
+		max-height:20px;
+		color: rgb(170, 128, 64);
+		font-weight: bold;
+	    }
+	    .input_take15 {
+		font-size:12px; 
+		max-height:20px;
+		color:rgb(0, 64, 128);
+		font-weight: bold;
+	    }
+	    .input_take16 {
+		font-size:12px; 
+		max-height:20px;
+		color:rgb(64, 200, 128);
+		font-weight: bold;
+	    }
+	    .input_take17 {
+		font-size:12px; 
+		max-height:20px;
+		color:rgb(128, 200, 64);
+		font-weight: bold;
+	    }
+	    .input_take18 {
+		font-size:12px; 
+		max-height:20px;
+		color:rgb(64, 64, 128);
+		font-weight: bold;
+	    }
+	    .input_take19 {
+		font-size:12px; 
+		max-height:20px;
+		color:rgb(64, 128, 64);
+		font-weight: bold;
+	    }
+	    .input_take20 {
+		font-size:12px; 
+		max-height:20px;
+		color:rgb(128, 64, 64);
+		font-weight: bold;
+	    }
 	    .button2 {
 		background-image: url("{{url_for('static', filename='arrow-up-icon.png')}}");
          	background-size: cover;
@@ -72,21 +198,48 @@
 	    if (event.keyCode == 13) {
 	      //this.form.submit();
 	      
+	      //console.log($(this).attr('id'))
 	      var thenum = $(this).attr('id').replace( /^\D+/g, ''); // replace all leading non-digits with nothing
+	      //console.log(thenum)
 	      //console.log( document.getElementById('quantity' + thenum).value )
 	      //console.log( document.getElementById('category' + thenum).value )
-	      document.getElementById('id_form').value=thenum;
-	      document.getElementById('quantity_form').value=document.getElementById('quantity' + thenum).value;
-	      document.getElementById('category_form').value=document.getElementById('category' + thenum).value;
+	      //document.getElementById('id_form').value=thenum;
+	      //document.getElementById('quantity_form').value=document.getElementById('add_quantity' + thenum).value;
+	      //document.getElementById('category_form').value=document.getElementById('add_category' + thenum).value;
 
-	      document.getElementById('update_form').submit();
+	    const url = thenum+"/update";
+	    const data = {
+		'quantity' : document.getElementById('take_quantity'+thenum).value,
+		'category' : document.getElementById('take_category'+thenum).value,
+	    };
+
+	    const other_params = {
+		headers : { "content-type" : "application/json; charset=UTF-8" },
+		body: JSON.stringify({data}),
+		method : "POST",
+		mode : "cors"
+	    };
+
+	    fetch(url, other_params)
+		.then(function(response) {
+		    if(response.redirected == true)
+		    {
+			window.location.reload();
+		    }
+		}).then(function(data) {
+		    //console.log("update data")
+		    //console.log(data)
+		}).catch(function(error) {
+		    //console.log("update error")
+		});
+	      //document.getElementById('update_form').submit();
 	      return false;
 	    }
 	  });
 	});
 	function AddUsersKeyDown(evtobj) {
 	    var target = evtobj.target || evtobj.srcElement;
-	    console.log(target.id);
+	    //console.log(target.id);
 	    
 	    //console.log(document.getElementById('quantity').value);
 	    //console.log(document.getElementById('category').value);
@@ -161,7 +314,7 @@
 		    });
 	    });
 	    var availableTags = [
-		{% for product in products %}
+		{% for product in spesa %}
 		{
 		    id: "{{ product.id }}",
 		    label: "{{ product.name|safe }}", 
@@ -180,17 +333,99 @@
 		}
 	    });
 	} );
+	function take(e) {
+	    
+	    document.getElementById('take'+e).style.display = "none";
+	    document.getElementById('add'+e).style.display = "block";
+	    //quantity = document.getElementById('take_quantity'+e).value;
+	    //category = document.getElementById('take_category'+e).value;
+	    
+	    //console.log(document.getElementById('take_quantity'+e).value);
+	    //console.log(document.getElementById('take_category'+e).value);
+	    //console.log(document.getElementById('add_quantity'+e).value);
+	    //console.log(document.getElementById('add_category'+e).value);
+	    
+	    const url = e+"/take";
+	    const data = {
+	    };
+	    const other_params = {
+		headers : { "content-type" : "application/json; charset=UTF-8" },
+		body : data,
+		method : "POST",
+		mode : "cors"
+	    };
+
+	    fetch(url, other_params)
+		.then(function(response) {
+		    //console.log("take response")
+		    //console.log(response)
+		    response.json().then((data) => 
+			    document.getElementById('num_elements').text = "SpesaApp - v 2.0 - " + data.num_take + " elements")
+			;
+
+		}).then(function(data) {
+		    //console.log("take data")
+		    //console.log(data)
+		}).catch(function(error) {
+		    //console.log("take error")
+		    //console.log(error)
+		});
+	    return true;
+	    
+	}
+	function add(e) {
+	    document.getElementById('add'+e).style.display = "none";
+	    document.getElementById('take'+e).style.display = "block";
+	    //console.log(document.getElementById('add_quantity'+e).value);
+	    //console.log(document.getElementById('add_category'+e).value);
+	    //console.log(document.getElementById('take_quantity'+e).value);
+	    //console.log(document.getElementById('take_category'+e).value);
+
+	    document.getElementById('take_quantity'+e).value = document.getElementById('add_quantity'+e).value;
+	    document.getElementById('take_category'+e).value = document.getElementById('add_category'+e).value;
+	    
+	    //document.getElementById('num_elements').text = "SpesaApp - v 2.0 -" + ns.c + " elements";
+	    
+	    const url = e+"/add";
+	    const data = {
+		'quantity' : document.getElementById('add_quantity'+e).value,
+		'category' : document.getElementById('add_category'+e).value,
+		'name' : document.getElementById('add_name'+e).value,
+	    };
+	    const other_params = {
+		headers : { "content-type" : "application/json; charset=UTF-8" },
+		body: JSON.stringify({data}),
+		method : "POST",
+		mode : "cors"
+	    };
+
+	    fetch(url, other_params)
+		.then(response => {
+		    if(response.redirected == true)
+		    {
+			window.location.reload();
+		    }
+		    else
+		    {
+			response.json().then((data) => 
+			    document.getElementById('num_elements').text = "SpesaApp - v 2.0 - " + data.num_take + " elements")
+			;
+		    }
+		}).catch(error => {
+		    //console.log("add error")
+		    //console.log(error)
+		});
+	    return true;
+	}
 	</script>
 	{% endblock %}
     </head>
     <title>SpesaApp</title>
     <body>
-
 	<nav class="navbar navbar-dark bg-dark">
 	    <div class="container-fluid">
-		<a class="navbar-brand" href="#">
-		    <img src="https://cdn-icons-png.flaticon.com/512/3388/3388607.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
-			SpesaApp - v 1.0 - {{ spesa|length }} elements
+		<a id="num_elements" class="navbar-brand" href="#">
+			SpesaApp - v 2.0 - {{ num_take }} elements
 		</a>
 	    </div>
 	</nav>
@@ -206,34 +441,42 @@
 	    </form>
 	</div>
 	{% for product in spesa %}
-		<form action="{{product.id}}/take" method="POST">
-	    <div class="m-1 input-group mb-0" style="font-size:8px;">
-		    <button class="btn btn-success button1" type="submit"></button>
-		    <input class="form-control  input1" type="text" value="{{product.name}}" disabled>
-		    <input type="text" name="quantity" class="form-control input2 submit_on_enter" value="{{product.quantity}}" id="quantity{{product.id}}">
-		    <input type="text" name="category" class="form-control input5 submit_on_enter category" value="{{product.category}}" id="category{{product.id}}">
-	    </div>
-		</form>
+	    {% set input_style = "input_take%d"|format((product.category | int(base=10))/5) %}
+	    {% if product.toTake == 1 %}
+	    <form action="javascript:void(0);" onsubmit="take({{product.id}})" id="take{{product.id}}" style="display:block">
+	    {% else %}
+	    <form action="javascript:void(0);" onsubmit="take({{product.id}})" id="take{{product.id}}" style="display:none">
+	    {% endif %}
+		<div class="m-1 input-group mb-0" style="font-size:8px;">
+		    <input class="btn btn-success button1" type="submit">
+		    <input class="form-control {{input_style}}" type="text" value="{{product.name}}" disabled>
+		    <input type="text" name="quantity" class="form-control input2 submit_on_enter" value="{{product.quantity}}" id="take_quantity{{product.id}}">
+		    <input type="text" name="category" class="form-control input5 submit_on_enter category" value="{{product.category}}" id="take_category{{product.id}}">
+		</div>
+	    </form>
 	{% endfor %}
+	<hr>
 	<form action="/update" id="update_form" method="POST">
 	    <input type="hidden" name="id"       id="id_form" value="-1">
 	    <input type="hidden" name="quantity" id="quantity_form" value="-1">
 	    <input type="hidden" name="category" id="category_form" value="-1">
 	</form>
-	<hr>
-	{% for product in products %}
-	    {% if product.count > 1 %}
-		<form action="{{product.id}}/add" method="POST">
+
+	{% for product in spesa %}
+	    {% if product.count > 1 and product.toTake != 1 %}
+	    <form action="javascript:void(0);" onsubmit="add({{product.id}})" id="add{{product.id}}" style="display:block">
+	    {% else %}
+	    <form action="javascript:void(0);" onsubmit="add({{product.id}})" id="add{{product.id}}" style="display:none">
+	    {% endif %}
 		    <div class="m-1 input-group mb-0">
 			<button class="btn btn-primary button2" type="submit"></button>
-			<input class="form-control input1" type="text" name="name" value="{{product.name}}">
+			<input class="form-control input1" type="text" name="name" value="{{product.name}}" id="add_name{{product.id}}">
 			<span class="input-group-text s">Q</span>
-			<input type="text" class="form-control input4" name="quantity" value="{{product.quantity}}" required>
+			<input type="text" class="form-control input4" name="quantity" value="{{product.quantity}}" id="add_quantity{{product.id}}" required>
 			<span class="input-group-text s">C</span>
-			<input type="text" class="form-control input5" name="category" value="{{product.category}}" required>
+			<input type="text" class="form-control input5" name="category" value="{{product.category}}" id="add_category{{product.id}}" required>
 		    </div>
 		</form>
-	    {% endif %}
 	{% endfor %}
 	
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

@@ -1,12 +1,18 @@
-from flask import Flask, render_template, redirect, request, jsonify
+from flask import Flask, render_template, redirect, request, json
 import os
 import sqlite3
+import pathlib
+import click
+from argparse import ArgumentParser
 
 app = Flask(__name__)
-port = int(os.getenv("PORT", 9090))
+parser = ArgumentParser()
+parser.add_argument('--port')
+parser.add_argument('--path')
+args = parser.parse_args()
 
 def connect():
-    connection = sqlite3.connect('/home/pi/Spesa/database.db')
+    connection = sqlite3.connect(args.path + '/database.db')
     connection.row_factory = sqlite3.Row
     return connection
 
@@ -14,15 +20,15 @@ def connect():
 def index():
     connection = connect()
 
-    products = connection.execute('SELECT * FROM spesa WHERE toTake=0 ORDER BY count DESC').fetchall()
     #for item in products:
     #    print (item['name'])
     #    print (item['count'])
-    spesa = connection.execute('SELECT * FROM spesa WHERE toTake=1 ORDER BY category').fetchall()
-    
+    spesa = connection.execute('SELECT * FROM spesa ORDER BY category').fetchall()
+    num_take = connection.execute('SELECT COUNT(*) FROM spesa WHERE toTake=1').fetchone()[0]
+        
     connection.close()
 
-    return render_template('index.html', products=products, spesa=spesa)
+    return render_template('index.html', spesa=spesa, num_take=num_take)
 
 @app.route('/autocomplete', methods=['GET'])
 def autocomplete():
@@ -34,14 +40,21 @@ def autocomplete():
     
     cur.execute('SELECT name FROM spesa WHERE toTake=0 and name LIKE ? ORDER BY count', ('%'+search+'%',))
     data = dict(result=[dict(r) for r in cur.fetchall()])
-    print(data)
-    return jsonify(matching_results=data)
+    #print(data)
+    return json.jsonify(matching_results=data)
 
-@app.route('/<int:idx>/add', methods=('POST',))
+@app.route('/<int:idx>/add' , methods=('POST',))
 def add(idx):
     connection = connect()
 
-    name = request.form['name']
+    data = request.get_json()
+    #print(idx)
+    #print(data)
+    #print(data['data']['category'])
+    #print(data.data.name)
+    #print(data.data.quantity)
+    
+    name = data['data']['name']
     if len(name) == 0:
         connection.execute('DELETE FROM spesa WHERE id=?', (idx,))
         connection.commit()
@@ -50,17 +63,25 @@ def add(idx):
         
         return redirect('/spesa')
         
-    quantity = request.form['quantity']
-    category = request.form['category']
+    quantity = data['data']['quantity']
+    new_category = data['data']['category']
 
-    cur = connection.cursor()
-    count = cur.execute('SELECT count FROM spesa WHERE id=?', (idx,)).fetchone()[0]
+    values = connection.execute('SELECT count, category FROM spesa WHERE id=?', (idx,)).fetchall()
+    count = values[0]['count']
+    category = values[0]['category']
     count += 1
-    connection.execute('UPDATE spesa SET toTake=1, name=?, quantity=?, category=?, count=? WHERE id=?', (name, quantity, category, count, idx,))
+    connection.execute('UPDATE spesa SET toTake=1, name=?, quantity=?, category=?, count=? WHERE id=?', (name, quantity, new_category, count, idx,))
     connection.commit()
 
+    if int(new_category) != int(category):
+        connection.close()
+        return redirect('/spesa')
+    num_take = connection.execute('SELECT COUNT(*) FROM spesa WHERE toTake=1').fetchone()[0]
+    
     connection.close()
-    return redirect('/spesa')
+
+    #return jsonify(data=data)
+    return json.jsonify({"num_take": num_take})
     
 @app.route('/new', methods=('POST',))
 def new():
@@ -85,7 +106,7 @@ def new():
         else:
             connection.execute('INSERT INTO spesa (name, quantity, category, count, toTake) VALUES (?,?,?,0,1)', (name, quantity, category))
     
-    connection.commit()    
+    connection.commit()
 
     connection.close()
     return redirect('/spesa')
@@ -93,11 +114,26 @@ def new():
 @app.route('/<int:idx>/update', methods=('POST',))
 def update(idx):
     connection = connect()
-    connection.execute('UPDATE spesa SET quantity=?, category=? WHERE id=?', (request.form['quantity'], request.form['category'], idx))
+    data = request.get_json()
+    
+    quantity = data['data']['quantity']
+    new_category = data['data']['category']
+
+    values = connection.execute('SELECT category FROM spesa WHERE id=?', (idx,)).fetchall()
+    category = values[0]['category']
+
+    connection.execute('UPDATE spesa SET quantity=?, category=? WHERE id=?', (quantity, new_category, idx))
     connection.commit()    
 
     connection.close()
-    return redirect('/spesa')
+
+    print(new_category)
+    print(category)
+    if int(new_category) != int(category):
+        print("update redirect")
+        return redirect('/spesa')
+        
+    return json.jsonify({})
 
 @app.route('/update', methods=('POST',))
 def update2():
@@ -109,7 +145,8 @@ def update2():
     connection.commit()    
 
     connection.close()
-    return redirect('/spesa')
+    #return redirect('/spesa')
+    return jsonify({})
     
 @app.route('/<int:idx>/take', methods=('POST',))
 def take(idx):
@@ -118,10 +155,16 @@ def take(idx):
     connection.execute('UPDATE spesa SET toTake=0 WHERE id=?', (idx,))
     connection.commit()
 
+    #return redirect('/spesa')
+    num_take = connection.execute('SELECT COUNT(*) FROM spesa WHERE toTake=1').fetchone()[0]
     connection.close()
-    return redirect('/spesa')
+
+    return json.jsonify({"num_take": num_take})
 
 if __name__ == '__main__':
-    print("port: " + str(port))
-    app.run(host='0.0.0.0', port=port, threaded=True)
+    print(args)
+    #port = int(os.getenv("PORT", 9080))
+    print("Port: " + args.port)
+    print("Path: " + args.path)
+    app.run(host='0.0.0.0', port=args.port, threaded=True)
 
