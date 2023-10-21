@@ -23,12 +23,27 @@ def index():
     #for item in products:
     #    print (item['name'])
     #    print (item['count'])
-    spesa = connection.execute('SELECT * FROM spesa ORDER BY category').fetchall()
+    spesa = connection.execute('SELECT * FROM spesa WHERE toTake=0 ORDER BY count DESC').fetchall()
     num_take = connection.execute('SELECT COUNT(*) FROM spesa WHERE toTake=1').fetchone()[0]
         
     connection.close()
 
     return render_template('index.html', spesa=spesa, num_take=num_take)
+
+@app.route('/spesa2')
+def index2():
+    connection = connect()
+
+    #for item in products:
+    #    print (item['name'])
+    #    print (item['count'])
+    spesa = connection.execute('SELECT * FROM spesa WHERE toTake=1 ORDER BY category').fetchall()
+    num_take = connection.execute('SELECT COUNT(*) FROM spesa WHERE toTake=1').fetchone()[0]
+        
+    connection.close()
+
+    return render_template('index2.html', spesa=spesa, num_take=num_take)
+
 
 @app.route('/autocomplete', methods=['GET'])
 def autocomplete():
@@ -135,19 +150,6 @@ def update(idx):
         
     return json.jsonify({})
 
-@app.route('/update', methods=('POST',))
-def update2():
-    #print(request.form['id'])
-    #print(request.form['quantity'])
-    #print(request.form['category'])
-    connection = connect()
-    connection.execute('UPDATE spesa SET quantity=?, category=? WHERE id=?', (request.form['quantity'], request.form['category'], request.form['id']))
-    connection.commit()    
-
-    connection.close()
-    #return redirect('/spesa')
-    return jsonify({})
-    
 @app.route('/<int:idx>/take', methods=('POST',))
 def take(idx):
     connection = connect()
