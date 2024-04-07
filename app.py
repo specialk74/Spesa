@@ -156,6 +156,14 @@ def take(idx):
     
     connection.execute('UPDATE spesa SET toTake=0 WHERE id=?', (idx,))
     connection.commit()
+    
+    connection.execute('INSERT INTO history (spesa_id) VALUES (?)', (idx,))
+    connection.commit()
+
+    num_history = connection.execute('SELECT COUNT(*) FROM history').fetchone()[0]
+    if int(num_history) > int(100):
+        connection.execute('DELETE FROM history LIMIT 0,1')     
+        connection.commit()
 
     #return redirect('/spesa')
     num_take = connection.execute('SELECT COUNT(*) FROM spesa WHERE toTake=1').fetchone()[0]

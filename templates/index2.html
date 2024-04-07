@@ -387,8 +387,16 @@
 		<input type="text" id="category" class="form-control input6" name="category" placeholder="C: 0" required>
 	    </form>
 	</div>
+	{% set old_input_style = "" %}
 	{% for product in spesa %}
 	    {% set input_style = "input_take%d"|format((product.category | int(base=10))/5) %}
+	    {% if old_input_style != input_style %}
+						{% if old_input_style != "" %}
+							<div class="m-1 input-group mb-0" style="height:10px;">
+								</div>
+						{% endif %}
+	    {% set old_input_style = input_style %}
+		   {% endif %}
 	    {% if product.toTake == 1 %}
 	    <form action="javascript:void(0);" onsubmit="take({{product.id}})" id="take{{product.id}}" style="display:block">
 	    {% else %}
